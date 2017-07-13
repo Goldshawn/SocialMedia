@@ -25,6 +25,9 @@
 		71345B771F162550005041F0 /* TextFieldEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71345B6C1F162550005041F0 /* TextFieldEffects.swift */; };
 		71345B781F162550005041F0 /* YokoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71345B6D1F162550005041F0 /* YokoTextField.swift */; };
 		71345B791F162550005041F0 /* YoshikoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71345B6E1F162550005041F0 /* YoshikoTextField.swift */; };
+		718AB14D1F175ECB00FE8679 /* otherConfigs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718AB14C1F175ECB00FE8679 /* otherConfigs.swift */; };
+		718AB1501F175F5000FE8679 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718AB14F1F175F5000FE8679 /* Constants.swift */; };
+		718AB1521F1760A900FE8679 /* roundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718AB1511F1760A900FE8679 /* roundedButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +52,9 @@
 		71345B6C1F162550005041F0 /* TextFieldEffects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldEffects.swift; sourceTree = "<group>"; };
 		71345B6D1F162550005041F0 /* YokoTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YokoTextField.swift; sourceTree = "<group>"; };
 		71345B6E1F162550005041F0 /* YoshikoTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoshikoTextField.swift; sourceTree = "<group>"; };
+		718AB14C1F175ECB00FE8679 /* otherConfigs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = otherConfigs.swift; sourceTree = "<group>"; };
+		718AB14F1F175F5000FE8679 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		718AB1511F1760A900FE8679 /* roundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = roundedButton.swift; sourceTree = "<group>"; };
 		7AB196B2BDC6A99186C32423 /* Pods-SocialMedia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialMedia.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SocialMedia/Pods-SocialMedia.debug.xcconfig"; sourceTree = "<group>"; };
 		9732A797594F8026BFC2F17B /* Pods_SocialMedia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SocialMedia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -95,6 +101,7 @@
 		71345B4A1F161B32005041F0 /* SocialMedia */ = {
 			isa = PBXGroup;
 			children = (
+				718AB14E1F175F3B00FE8679 /* Util */,
 				71345B5F1F161E4D005041F0 /* Model */,
 				71345B601F161E52005041F0 /* View */,
 				71345B611F161E58005041F0 /* Controller */,
@@ -118,6 +125,8 @@
 		71345B601F161E52005041F0 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				718AB14C1F175ECB00FE8679 /* otherConfigs.swift */,
+				718AB1511F1760A900FE8679 /* roundedButton.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -147,6 +156,14 @@
 				71345B6E1F162550005041F0 /* YoshikoTextField.swift */,
 			);
 			path = TextFieldEffects;
+			sourceTree = "<group>";
+		};
+		718AB14E1F175F3B00FE8679 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				718AB14F1F175F5000FE8679 /* Constants.swift */,
+			);
+			name = Util;
 			sourceTree = "<group>";
 		};
 		A5F77E5E8D549C4A7FF514A8 /* Pods */ = {
@@ -286,6 +303,7 @@
 			files = (
 				71345B6F1F162550005041F0 /* AkiraTextField.swift in Sources */,
 				71345B4E1F161B32005041F0 /* SignInVC.swift in Sources */,
+				718AB14D1F175ECB00FE8679 /* otherConfigs.swift in Sources */,
 				71345B761F162550005041F0 /* MinoruTextField.swift in Sources */,
 				71345B741F162550005041F0 /* KaedeTextField.swift in Sources */,
 				71345B791F162550005041F0 /* YoshikoTextField.swift in Sources */,
@@ -294,6 +312,8 @@
 				71345B781F162550005041F0 /* YokoTextField.swift in Sources */,
 				71345B701F162550005041F0 /* HoshiTextField.swift in Sources */,
 				71345B721F162550005041F0 /* IsaoTextField.swift in Sources */,
+				718AB1521F1760A900FE8679 /* roundedButton.swift in Sources */,
+				718AB1501F175F5000FE8679 /* Constants.swift in Sources */,
 				71345B751F162550005041F0 /* MadokaTextField.swift in Sources */,
 				71345B731F162550005041F0 /* JiroTextField.swift in Sources */,
 			);
