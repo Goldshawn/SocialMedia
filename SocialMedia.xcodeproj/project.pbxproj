@@ -440,6 +440,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7AB196B2BDC6A99186C32423 /* Pods-SocialMedia.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = X9SMA4AC5Y;
 				INFOPLIST_FILE = SocialMedia/Info.plist;
@@ -454,6 +455,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 04B05D5F1F14345A05DF18DE /* Pods-SocialMedia.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = X9SMA4AC5Y;
 				INFOPLIST_FILE = SocialMedia/Info.plist;
