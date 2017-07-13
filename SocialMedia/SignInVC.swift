@@ -13,6 +13,8 @@ import FacebookLogin
 
 class SignInVC: UIViewController {
 
+    @IBOutlet weak var emailText: HoshiTextField!
+    @IBOutlet weak var passwordText: HoshiTextField!
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -66,6 +68,24 @@ class SignInVC: UIViewController {
         }
         
         
+    }
+    @IBAction func signInTapped(_ sender: Any) {
+        if let email = emailText.text, let pass = passwordText.text {
+            Auth.auth().signIn(withEmail: email, password: pass, completion: { (user, error) in
+                if error == nil {
+                    print("All done @Email")
+                }else {
+                    Auth.auth().createUser(withEmail: email, password: pass, completion: { (user, error) in
+                        if error != nil{
+                            print(error?.localizedDescription as Any, "Unable to do shii")
+                        }else{
+                            print("User Created")
+                            Auth.auth().signIn(withEmail: email, password: pass, completion: nil)
+                        }
+                    })
+                }
+            })
+        }
     }
     
     func firebaseAuth(_ credential: AuthCredential){
