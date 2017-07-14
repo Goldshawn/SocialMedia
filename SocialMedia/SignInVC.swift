@@ -10,6 +10,7 @@ import UIKit
 import Firebase
 import FacebookCore
 import FacebookLogin
+import SwiftKeychainWrapper
 
 class SignInVC: UIViewController {
 
@@ -18,19 +19,17 @@ class SignInVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if AccessToken.current != nil {
-            print("Its already Done")
-        }else{
-            print("its sha reading this block of code")
-        }
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+        
+        if let _ = KeychainWrapper.standard.string(forKey: KEY_UID){
+            performSegue(withIdentifier: "goToFeedVC", sender: nil)
+        }
+        
     }
-
     @IBAction func facebookButtonTapped(_ sender: Any) {
         
         let facebookLogin = LoginManager()
@@ -74,13 +73,19 @@ class SignInVC: UIViewController {
             Auth.auth().signIn(withEmail: email, password: pass, completion: { (user, error) in
                 if error == nil {
                     print("All done @Email")
+                    if let user = user {
+                        self.completeSignIn(user.uid)
+                    }
                 }else {
                     Auth.auth().createUser(withEmail: email, password: pass, completion: { (user, error) in
                         if error != nil{
-                            print(error?.localizedDescription as Any, "Unable to do shii")
+                            print(error?.localizedDescription ?? String(), "Unable to do shii")
                         }else{
                             print("User Created")
                             Auth.auth().signIn(withEmail: email, password: pass, completion: nil)
+                            if let user = user {
+                                self.completeSignIn(user.uid)
+                            }
                         }
                     })
                 }
@@ -94,9 +99,16 @@ class SignInVC: UIViewController {
                 print(error?.localizedDescription as Any)
             }else {
                 print("Authentication is 💯")
+                if let user = user{
+                    self.completeSignIn(user.uid)
+                }
             }
         }
     }
     
+    func completeSignIn(_ id: String){
+        KeychainWrapper.standard.set(id, forKey: KEY_UID)
+        performSegue(withIdentifier: "goToFeedVC", sender: nil)
+    }
 }
 

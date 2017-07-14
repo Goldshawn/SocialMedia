@@ -28,6 +28,7 @@
 		718AB14D1F175ECB00FE8679 /* otherConfigs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718AB14C1F175ECB00FE8679 /* otherConfigs.swift */; };
 		718AB1501F175F5000FE8679 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718AB14F1F175F5000FE8679 /* Constants.swift */; };
 		718AB1521F1760A900FE8679 /* roundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718AB1511F1760A900FE8679 /* roundedButton.swift */; };
+		71956F011F183F8F0088D5B4 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71956F001F183F8F0088D5B4 /* FeedVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +56,7 @@
 		718AB14C1F175ECB00FE8679 /* otherConfigs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = otherConfigs.swift; sourceTree = "<group>"; };
 		718AB14F1F175F5000FE8679 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		718AB1511F1760A900FE8679 /* roundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = roundedButton.swift; sourceTree = "<group>"; };
+		71956F001F183F8F0088D5B4 /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
 		7AB196B2BDC6A99186C32423 /* Pods-SocialMedia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialMedia.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SocialMedia/Pods-SocialMedia.debug.xcconfig"; sourceTree = "<group>"; };
 		9732A797594F8026BFC2F17B /* Pods_SocialMedia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SocialMedia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -135,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				71345B4D1F161B32005041F0 /* SignInVC.swift */,
+				71956F001F183F8F0088D5B4 /* FeedVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -305,6 +308,7 @@
 				71345B4E1F161B32005041F0 /* SignInVC.swift in Sources */,
 				718AB14D1F175ECB00FE8679 /* otherConfigs.swift in Sources */,
 				71345B761F162550005041F0 /* MinoruTextField.swift in Sources */,
+				71956F011F183F8F0088D5B4 /* FeedVC.swift in Sources */,
 				71345B741F162550005041F0 /* KaedeTextField.swift in Sources */,
 				71345B791F162550005041F0 /* YoshikoTextField.swift in Sources */,
 				71345B771F162550005041F0 /* TextFieldEffects.swift in Sources */,
